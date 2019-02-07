@@ -46,11 +46,14 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function sumAndMultiply(a, b, c) { //eslint-disable-line
-
+  var funSum = sum(sum(a, b)[0], c)[0]; // using sum function twice to calculate variable.  using [0] to get sum from [sum] in prob 1.  gets 11 then adds 5 - var =15
+  var funMult = multiply(multiply(a, b)[0], c)[0]; // same process but gets from prob 2 [0], [product]
+  var elThree = a + ' and ' + b + ' and ' + c + ' sum to ' + funSum + '.';  // var = string
+  var elFour ='The product of ' + a + ' and ' + b + ' and ' + c + ' is ' + funMult + '.'; // var = string
+  return ([funSum, funMult, elThree, elFour]);  // returns variables in sequence
 }
-
 // Here is the test for sumAndMultiply(); uncomment it to run it
-//testSumAndMultiply(4,7,5);
+testSumAndMultiply(4,7,5);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
