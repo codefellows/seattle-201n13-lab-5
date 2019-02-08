@@ -1,17 +1,33 @@
 'use strict';
 /////////////////////////////////////
 /* Problem 1 (this is your demo that we'll solve in class)
-Write a function called sum() that takes in two numbers as arguments and then returns an array where the first element is the sum of those numbers, and the second element is a concatenated string that EXACTLY follows this example and uses the values that were input into the function:
+Write a function called sum() that takes in two numbers as
+arguments and then returns an array where the first element
+is the sum of those numbers, and the second element is a
+concatenated string that EXACTLY follows this example and
+uses the values that were input into the function:
 "The sum of 4 and 7 is 11."
-Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSum() function below and check the console to see if the test passes.*/
+Test this function by hand in the console to get it working,
+and when you think it is finished, uncomment the call for the
+testSum() function below and check the console to see if the test passes.*/
 
 // Write your code here
-function sum(a, b) { //eslint-disable-line
-  sdf
+
+function sum(x,y) {
+  var math = (x+y);
+  console.log(math);
+  var string = 'The sum of ' + x + ' and ' + y + ' is ' + math + '.';
+  return ([math,string]);
 }
 
-// Here is the test for sum(); uncomment it to run it
-// testSum(4, 7);
+sum();
+
+
+
+//Here is the test for sum(); uncomment it to run it
+
+//eslint-disable-next-line no-undef
+testSum(4, 7);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
@@ -84,7 +100,7 @@ function multiplyArray(multArr) { //eslint-disable-line
 // Here is the test for multiplyArray(); uncomment it to run it
 // testMultiplyArray(testArray);
 
-// Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. 
+// Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop.
 
 // You're done! Submit the link to the repo following the instructions in Canvas. Or, try out the stretch goal below...
 
