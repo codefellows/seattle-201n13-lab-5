@@ -88,11 +88,13 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiplyArray(multArr) { //eslint-disable-line
-
+  var productFiv = multiply(multiply(2, 3)[0], 4)[0]; // finding product of 2,3,6 by calling multiply function from problem 2 twice. first gets 6 using [product] then multiplies with 4 using [product] to get 24.
+  var stringFive = 'The numbers ' + testArray + ' have a product of ' + productFiv + '.'; // using var testArray from prob4 to concantenate string and var productFiv to get product of 24
+  return ([productFiv, stringFive]); //returning 24 from var productFiv, and var stringFive
 }
 
 // Here is the test for multiplyArray(); uncomment it to run it
-// testMultiplyArray(testArray);
+testMultiplyArray(testArray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. 
 
