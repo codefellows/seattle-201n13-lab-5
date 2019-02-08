@@ -12,6 +12,7 @@ and when you think it is finished, uncomment the call for the
 testSum() function below and check the console to see if the test passes.*/
 
 // Write your code here
+//add code
 
 function sum(x,y) {
   var math = (x+y);
