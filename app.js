@@ -6,7 +6,7 @@ Write a function called sum() that takes in two numbers as arguments and then re
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSum() function below and check the console to see if the test passes.*/
 
 // Write your code here
-function sum(a, b) { 
+function sum(a, b,) { 
   var questionOne = a + b;
   var answer = ('The sum of ' + a + ' and ' + b + ' is ' + questionOne + '.');
   return [questionOne, answer];
@@ -28,7 +28,7 @@ Write a function called multiply() that takes in two numbers as arguments and re
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiply() function and see if the test passes.*/
 
 // Write your code here
-function multiply(a, b) { 
+function multiply(a, b,) { 
   var questionTwo = a * b;
   var answerTwo = ('The product of ' + a + ' and ' + b + ' is ' + questionTwo + '.');
   return [questionTwo, answerTwo];
@@ -49,12 +49,21 @@ IMPORTANT DETAIL: You may not use the arithmetic operators + and * in this funct
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSumAndMultiply() function and see if the test passes.*/
 
 // Write your code here
-function sumAndMultiply(a, b, c) { //eslint-disable-line
+function sumAndMultiply(a, b, c,) { 
+  var one = sum(a,b,);
+  var two = sum(one[0], c);
+  var three = two[0];
+  var mOne = multiply(a,b,);
+  var mTwo =  multiply(mOne[0], c);
+  var mThree = mTwo[0];
+  var questionThreeA = (a + ' and ' + b + ' and ' + c + ' sum to ' + three + '.');
+  var questionThreeB = ('The product of ' + a + ' and ' + b + ' and ' + c + ' is ' + mThree + '.');
+  return [three, mThree, questionThreeA, questionThreeB];
 
 }
 
 // Here is the test for sumAndMultiply(); uncomment it to run it
-// testSumAndMultiply(4,7,5);
+ testSumAndMultiply(4,7,5);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
