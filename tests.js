@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 'use strict';
 
 // You should not modify anything in this file, but feel free to look through it!
@@ -43,6 +44,7 @@ function testMultiplyArray() { //eslint-disable-line
 }
 
 function testMultiplyAnyArray() { //eslint-disable-line
+  // eslint-disable-next-line no-undef
   if (multiplyAnyArray(testDynamicArray)[0] === 120 && multiplyAnyArray(testDynamicArray)[1] === 'The numbers 1,2,3,4,5 have a product of 120.') {
     console.log('%c TEST FOR multiplyAnyArray() PASSES', 'color: green');
   } else {
