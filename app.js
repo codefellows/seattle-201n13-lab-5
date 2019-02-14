@@ -91,17 +91,17 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiplyArray(multArr) { //eslint-disable-line
-// var arrayTwo = [2,3,4];
-// var productOne = multiply(arrayTwo[0],arrayTwo[1])[0];
-// console.log(productOne);
-// var productTwo = multiply(arrayTwo[2],productOne)[0];
-// console.log(productTwo);
-// var answerString = "The numbers " + arrayTwo[0] + "," + arrayTwo[1] + "," + arrayTwo[2] + " have a product of " + productTwo + ".";
-// return[productTwo,answerString];
-// }
+var arrayTwo = [2,3,4];
+var productOne = multiply(arrayTwo[0],arrayTwo[1])[0];
+console.log(productOne);
+var productTwo = multiply(arrayTwo[2],productOne)[0];
+console.log(productTwo);
+var answerString = "The numbers " + arrayTwo[0] + "," + arrayTwo[1] + "," + arrayTwo[2] + " have a product of " + productTwo + ".";
+return[productTwo,answerString];
+}
 
 // Here is the test for multiplyArray(); uncomment it to run it
-// testMultiplyArray(testArray);
+testMultiplyArray(testArray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. 
 
@@ -138,7 +138,7 @@ console.log(product);
 msg = `${msg} have a product of ${product}.`;
 return[product,msg];
 }
-}
+
 // Here is the test for multiplyArray(); uncomment it to run it
 testMultiplyAnyArray(testDynamicArray);
 
