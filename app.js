@@ -97,6 +97,8 @@ function multiplyArray(multArr) { //eslint-disable-line
     myProd = multiply(myProd, multArr[i])[0];
   }
   var myProdString = 'The numbers ' + multArr + ' have a product of ' + myProd + '.';
+  // myProdString = `The numbers ${multArr} have a product of ${myProd}.`;
+  
   return [myProd, myProdString];
 }
 
