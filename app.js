@@ -59,7 +59,7 @@ function multiplyArray(multArr) {
  testMultiplyArray(testArray);
 
 // Write your code here
-/*var testDynamicArray = [1,2,3,4,5]; 
+var testDynamicArray = [1,2,3,4,5]; 
 
 function multiplyAnyArray(testDynamicArray) { 
   var one = multiply(testDynamicArray[0], testDynamicArray[1]);
@@ -71,5 +71,5 @@ function multiplyAnyArray(testDynamicArray) {
   return [five, finallyDone];
 
 }
- testMultiplyAnyArray(testDynamicArray);*/
+ testMultiplyAnyArray(testDynamicArray);
 
